@@ -1,8 +1,9 @@
 module.exports = {
-  googleClientID:
-    '70265989829-0t7m7ce5crs6scqd3t0t6g7pv83ncaii.apps.googleusercontent.com',
-  googleClientSecret: '8mkniDQOqacXtlRD3gA4n2az',
-  mongoURI: 'mongodb://jarnaud:rhinnie1@ds041404.mlab.com:41404/node-course',
-  cookieKey: '123123123',
-  redisUrl: 'redis://127.0.0.1:6379',
+  googleClientID: process.env.GOOGL_CLIENT_ID,
+  googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
+  mongoURI: process.env.MONGO_URI,
+  cookieKey: process.env.COOKIE_KEY,
+  redisUrl: process.env.REDIS_URL,
+  accessKeyId: process.env.ACCESS_KEY_ID,
+  secretAccessKey: process.env.SECRET_ACCESS_KEY,
 };
